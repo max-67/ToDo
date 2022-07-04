@@ -120,6 +120,7 @@ export default {
     },
   },
   mounted() {
+    this.selectedFilter = 'Все';
     this.getTodos();
     this.editElement = document.getElementById('dlgEdit');
     setInterval(() =>{
@@ -136,7 +137,6 @@ export default {
         this.getTodos();
       }
     },30000);
-    this.selectedFilter = 'Все';
   }
 }
 </script>
